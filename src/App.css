@@ -1,55 +1,129 @@
-.data {
-  background-color: red;
+.app {
+  width: 100vw;
   height: 100vh;
-  padding: 100px;
-}
-
-.titles {
-  background-color: green;
+  background-color: black;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
-.data-p {
-  background-color: transparent;
-  border-bottom: 1px solid rgb(63, 63, 63);
-  padding: 10px;
-  margin-bottom: 0px;
+.data {
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 80%;
+  height: 85%;
+  background-color: rgba(44, 43, 43, 0.64);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-p,
-.btn__p {
+.pages {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  width: max-content;
+}
+
+h1 {
   color: white;
-  width: 25%;
-  text-align: center;
-  padding: 10px;
+  letter-spacing: 1px;
+  font-size: 42px;
 }
 
-.btn__p{
+.top {
   display: flex;
   justify-content: space-between;
-}
-
-.container {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  min-height: 298px;
 }
 
 form {
-  width: 30%;
-  background-color: rebeccapurple;
+  background-color: black;
+  width: 29%;
   padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 10px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
 }
+
+.search {
+  color: white;
+  font-size: 22px;
+}
+
 input {
   width: 100%;
   background-color: transparent;
   border: none;
   outline: none;
-  font-size: 18px;
-  padding-inline: 8px;
   color: white;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.rigth__top {
+  color: white;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+}
+
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 110px;
+  letter-spacing: 2px;
+}
+
+.titles {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  color: black;
+}
+
+p {
+  padding: 10px;
+  width: 25%;
+  text-align: center;
+}
+
+.data-p {
+  background-color: black;
+  color: white;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+::placeholder {
+  padding-left: 3px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  padding-block: 10px;
 }

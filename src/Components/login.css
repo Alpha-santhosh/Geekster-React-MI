@@ -1,0 +1,71 @@
+.login {
+  width: 80%;
+  height: 85%;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  gap: 20px;
+}
+
+.input {
+  color: black;
+  border: 2px solid grey;
+  padding: 10px;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.input:focus {
+  box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px,
+    rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;
+}
+
+::placeholder {
+  color: rgb(78, 77, 77);
+  font-weight: bold;
+}
+
+.login_btn {
+  color: white;
+  border: 2px solid white;
+  width: max-content;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.login_btn:hover {
+  background-color: white;
+  color: black;
+  box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px,
+    rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;
+}
+
+.user {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.location_icon {
+  color: white;
+  font-size: 67px;
+  background-color: transparent;
+}
