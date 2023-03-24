@@ -1,2 +1,2 @@
-# live demo
-geekster-react-mi-gps-summary-2cww8y22v-alpha-santhosh.vercel.app
+[Click here to Live Demo of Assignment](https://geekster-react-mi-gps-summary.vercel.app/)
+https://geekster-react-mi-gps-summary.vercel.app/
