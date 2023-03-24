@@ -1,19 +1,17 @@
-import { createContext, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Data from "./Components/Data";
 import Login from "./Components/Login";
 import { ListData } from "./data";
 
-export const GLOBAL_DATA = createContext();
-
 function App() {
-  const [loginState, setloginState] = useState(false);
   return (
-    <GLOBAL_DATA.Provider value={{ loginState, setloginState }}>
       <div className="app">
-        {loginState ? <Data data={ListData} /> : <Login />}
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/data" element={<Data data={ListData} />} />
+        </Routes>
       </div>
-    </GLOBAL_DATA.Provider>
   );
 }
 
